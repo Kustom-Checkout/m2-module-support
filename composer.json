@@ -1,15 +1,15 @@
 {
-   "name": "vaimo/kustom-module-support",
+    "name": "kustom/module-support",
     "description": "Kustom Support Magento 2 Extension",
     "type": "magento2-module",
     "license": "Apache-2.0",
-    "version": "3.0.15",
+    "version": "3.1.0",
     "scripts": {
         "test": "phpunit",
         "cov": "phpunit --coverage-html coverage"
     },
     "require": {
-        "vaimo/kustom-module-base": "11.0.*",
+        "kustom/module-base": "^11.0",
         "magento/framework": "^103",
         "php": ">=7.4.0"
     },
@@ -17,7 +17,9 @@
         "psr-4": {
             "Klarna\\Support\\": "."
         },
-        "files": [ "registration.php" ]
+        "files": [
+            "registration.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
