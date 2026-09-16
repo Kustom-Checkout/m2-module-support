@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © Klarna Bank AB (publ)
+ * Copyright 2025 Kustom AB (Originally developed by Klarna Bank AB)
  *
  * For the full copyright and license information, please view the NOTICE
  * and LICENSE files that were distributed with this source code.
@@ -161,34 +161,24 @@ class EmailTest extends TestCase
     public static function modulesToIgnoreDataProvider(): array
     {
         return [
-            'ignore_klarna_kp' => [
+            'ignore_klarna_ksa' => [
                 'formData' => [
                     'data' => [
                         'OM',
-                        'OSM',
-                        'GraphQL',
-                        'KCO',
-                        'KSA',
-                        'SIWK',
-                        'KEC'
+                        'KCO'
                     ],
                     'include_klarna_settings' => "1",
                     'include_tax_settings' => "1",
                 ],
-                'expectedModulesToIgnore' => ['klarna_kp']
+                'expectedModulesToIgnore' => [2 => 'klarna_ksa']
             ],
             'jibirish_module_can_not_be_ignored' => [
                 'formData' => [
                     'data' => [
                         'JiBIrish',
-                        'KP',
                         'OM',
-                        'OSM',
-                        'GraphQL',
                         'KCO',
-                        'KSA',
-                        'SIWK',
-                        'KEC'
+                        'KSA'
                     ],
                     'include_klarna_settings' => "1",
                     'include_tax_settings' => "1",
@@ -198,14 +188,9 @@ class EmailTest extends TestCase
             'ignore_klarna_configs' => [
                 'formData' => [
                     'data' => [
-                        'KP',
                         'OM',
-                        'OSM',
-                        'GraphQL',
                         'KCO',
-                        'KSA',
-                        'SIWK',
-                        'KEC'
+                        'KSA'
                     ],
                     'include_klarna_settings' => "0",
                     'include_tax_settings' => "1",
@@ -215,14 +200,9 @@ class EmailTest extends TestCase
             'ignore_klarna_tax_configs' => [
                 'formData' => [
                     'data' => [
-                        'KP',
                         'OM',
-                        'OSM',
-                        'GraphQL',
                         'KCO',
-                        'KSA',
-                        'SIWK',
-                        'KEC'
+                        'KSA'
                     ],
                     'include_klarna_settings' => "1",
                     'include_tax_settings' => "0",
@@ -232,14 +212,9 @@ class EmailTest extends TestCase
             'ignore_klarna_configs_and_tax_configs' => [
                 'formData' => [
                     'data' => [
-                        'KP',
                         'OM',
-                        'OSM',
-                        'GraphQL',
                         'KCO',
-                        'KSA',
-                        'SIWK',
-                        'KEC'
+                        'KSA'
                     ],
                     'include_klarna_settings' => "0",
                     'include_tax_settings' => '0',
@@ -262,14 +237,9 @@ class EmailTest extends TestCase
 
         $formData = [
             'data' => [
-                'KP',
                 'OM',
-                'OSM',
-                'GraphQL',
                 'KCO',
-                'KSA',
-                'SIWK',
-                'KEC'
+                'KSA'
             ],
             'include_klarna_settings' => "0",
             'include_tax_settings' => '0',
@@ -313,7 +283,6 @@ class EmailTest extends TestCase
 
         $this->contentData = [
             'data' => [
-                'KP',
                 'Base'
             ]
         ];

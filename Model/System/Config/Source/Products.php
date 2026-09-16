@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © Klarna Bank AB (publ)
+ * Copyright 2025 Kustom AB (Originally developed by Klarna Bank AB)
  *
  * For the full copyright and license information, please view the NOTICE
  * and LICENSE files that were distributed with this source code.
@@ -25,20 +25,8 @@ class Products implements OptionSourceInterface
     {
         return [
             [
-                'value'         => "KP",
-                "label"         => "Klarna Payment",
-                "__disableTmpl" => true,
-            ], [
                 'value'         => "OM",
                 "label"         => "Order Management",
-                "__disableTmpl" => true,
-            ], [
-                'value'         => "OSM",
-                "label"         => "On-Site Messaging",
-                "__disableTmpl" => true,
-            ], [
-                'value'         => "GraphQL",
-                "label"         => "GraphQL",
                 "__disableTmpl" => true,
             ], [
                 'value'         => "KCO",
@@ -47,14 +35,6 @@ class Products implements OptionSourceInterface
             ], [
                 'value'         => "KSA",
                 "label"         => "Klarna Shipping Assistant",
-                "__disableTmpl" => true,
-            ], [
-                'value'         => "SIWK",
-                "label"         => "Sign in with Klarna",
-                "__disableTmpl" => true,
-            ], [
-                'value'         => "KEC",
-                "label"         => "Klarna Express Checkout",
                 "__disableTmpl" => true,
             ]
         ];
