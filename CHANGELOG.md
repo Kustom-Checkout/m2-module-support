@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.1.2 / 2026-08-19
+
+### Breaking changes
+* None
+
+### Features / changes
+* * KUSTOM-118: Removed discontinued products from the package (KP, OSM, SIWK, KEC, GraphQL)
+
+### Fixes
+* None
+
 ## 3.1.1 / 2026-08-19
 
 ### Breaking changes

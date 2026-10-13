@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © Klarna Bank AB (publ)
+ * Copyright 2025 Kustom AB (Originally developed by Klarna Bank AB)
  *
  * For the full copyright and license information, please view the NOTICE
  * and LICENSE files that were distributed with this source code.
@@ -253,14 +253,9 @@ class Email
     {
         $selectedKlarnaProducts = $formData['data'];
         $allPossibleKlarnaProducts = [
-            "KP",
             "OM",
-            "OSM",
-            "GraphQL",
             "KCO",
-            "KSA",
-            'SIWK',
-            'KEC'
+            "KSA"
         ];
 
         $modulesToIgnore = array_map(function ($product) {

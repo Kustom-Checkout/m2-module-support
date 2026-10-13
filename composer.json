@@ -3,7 +3,7 @@
     "description": "Kustom Support Magento 2 Extension",
     "type": "magento2-module",
     "license": "Apache-2.0",
-    "version": "3.1.1",
+    "version": "3.1.2",
     "scripts": {
         "test": "phpunit",
         "cov": "phpunit --coverage-html coverage"
